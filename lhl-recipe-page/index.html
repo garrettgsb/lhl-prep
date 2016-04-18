@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>Some kind of cookies?</title>
+	<link href="jquery-ui.css" rel="stylesheet">
+	<style>
+	body{
+		font: 62.5% "Trebuchet MS", sans-serif;
+		margin: 50px;
+	}
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	select {
+		width: 200px;
+	}
+
+	.instruction {
+		width: 400px;
+		height: auto;
+	}
+
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+<h1>Take Control of Your Cookies</h1>
+
+<div class="instruction" style="width: 40%">
+	<p>Cookies that you buy from the store can be good. Really really good. Someone close to you is selling cookies that are made with a virtuosity that is well beyond your reach, so why would you even bother with baking yourself?</p>
+	<p>I don't blame you for thinking that way, but I'm about to let you in on the secret that Big Cookie doesn't want you to know: If you make your own cookies, you can add <em>absolutely anything you want to them!</em> Seriously! There are no rules! If you think candy hearts would go great in a cookie, you can actually do that! I know a guy who once put bacon in a batch of cookies for some reason! They were terrible, but dammit, he did it!</p>
+	<h3>You are in control.</h3>
+	<p>Most cookie recipes will demand that you play by their rules. This recipe is different. This recipe will never tell you that your idea for a mix-in is stupid. It won't judge you for dreaming. This recipe gives you the freedom to add whatever you want to your cookie dough and truly express yourself. It will <span style="text-decoration: line-through;">maybe</span> probably taste terrible, but as you eat them, each increasingly reluctant bite will be one that truly belongs to you.</p>
+	<h3>So go ahead. This time YOU tell the RECIPE what goes in the cookies.</h3>
+	<img src="all-doze-toppins.jpg" width="400px">
+</div>
+
+<!-- Autocomplete -->
+<h2>What ingredient do you want to mix into your cookie dough?</h2>
+<div>
+	<input id="autocomplete" name="ingredient" title="type &quot;a&quot;">
+</div>
+<!-- Button -->
+<br />
+<button id="butt">Yep, do it.</button>
+
+<h2 id="done"></h2>
+<h1>We are making <span class="mixin">Chocolate Chips</span> cookies.<h1>
+<!-- Accordion -->
+<h2 class="demoHeaders">Ingredients</h2>
+<div id="accordion">
+	<h3>Flour</h3>
+	<div>
+		<ul>
+		<li>White, brown, buckwheat or rice</li>
+		<li>225g of it</li>
+		<li>DO NOT get wet</li>
+		<li>Or feed after midnight</li>
+		</ul>
+	</div>
+	
+	<h3>Butter</h3>
+	<div>
+		<ul>
+		<li>Or margarine or coconut oil or whatever</li>
+		<li>Olive oil even works in a pinch</li>
+		<li>As long as you have 125g of it</li>
+		<li>And you can make it nice and soft</li>
+		</ul>
+	</div>
+	
+	<h3>Sugar</h3>
+	<div>
+		<ul>
+		<li>Brown, white or cane</li>
+		<li>100g or to taste</li>
+		</ul>
+	</div>
+
+	<h3>An egg</h3>
+	<div>
+		<ul>
+		<li>Just one egg</li>
+		<li>Or 3 if you're using quail eggs</li>
+		<li>Nothing tricky here.</li>
+		</ul>
+	</div>
+	
+	<h3><span class="mixin">Chocolate Chips</span></h3>
+	<div>
+	<ul>
+	<li>Are you sure?</li>
+	<li>Cause you can still change it...</li>
+	<li>Okay. Well you need about 200g</li>
+	<li>Hope you know what you're doing</li>
+	</div>
+
+	<h3>Salt</h3>
+	<div>
+		<ul>
+		<li>Just a little bit</li>
+		<li>Like... Maybe a teaspoon? Is that a thing?</li>
+		</ul>
+	</div>
+</div>
+
+
+
+<section class="instructions">
+<div class="instruction"><h2>Step 1:</h2>
+<hr>
+<p>I know you're excited about the <span class="mixin">chocolate chips</span>, but hold your horses for now. We want to make the dough first, and that starts with butter and sugar. Put those guys into a bowl and mix em up.</p>
+<p>Once that's well-mixed, throw in the egg and salt. Mix that up too so it's nice and goopy.</p>
+<img src="butt-sugg.jpg" height="300px">
+</div>
+<div class="visual"></div>
+
+<div class="instruction"><h2>Step 2:</h2>
+<hr>
+<p>Okay, now it's time to take your <span class="mixin">chocolate chips</span> and add them to the mix. Fold them gently into the dough, careful not to burst them if they're something that can burst, or dissolve them if they're something that can easily dissolve.</p>
+<img src="secret.jpg" width="300px">
+</div>
+
+<div class="instruction"><h2>Step 3:</h2>
+<hr>
+<p>Time to heat that oven. You'll want it at about 473.15ºK.</p>
+<p>While the oven is heating, roll the dough into little 2cm balls and put them on a baking sheet lined with parchment paper. Don't put them too close together or you will end up with a mess. Also, get the timer app on your phone ready.</p>
+<img src="oven.jpg" width="300px">
+</div>
+
+<div class="instruction"><h2>Step 4:</h2>
+<hr>
+<p>With some foods, it's prudent to put it in the oven while it's pre-heating to cut down on cooking time, thereby saving on electricity.</p>
+<p><strong>HOWEVER</strong>, we are making cookies and this is <em>no time for eco-heroics</em>! Be patient. History will not remember your waste, so don't settle for mediocre cookies to impress historians who will know you only as a statistical footnote.</p>
+<img src="no-capn.png" width="300px">
+<p>If your oven is anything like mine, it will release a distinctive beeping sound when it's properly pre-heated. You've got your timer app ready, right? Pop the cookie sheet into the oven and set it for 8 minutes and 46 seconds (most people take 8 seconds to put the cookie sheet into the oven, and 6 more to set the time on their phone app).</p>
+</div>
+
+<div class="instruction"><h2>Step 5:</h2>
+<hr>
+<p>You've done it. Pull them out of the oven, let them cool, and see what happened! If the <span class="mixin">chocolate chips</span> didn't melt, explode, or otherwise cause visible damage, then take a picture of your creation now. You can put it on Instagram whenever, but stale cookies don't photograph well for some reason.</p>
+<img src="stale.jpg" width="300px">
+<p><em>Like what the hell even are these...?</em></p>
+</section>
+<!--End stuff Garrett did (mostly)-->
+
+
+<!---Boilerplate jQuery UI stuff-->
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+
+$( "#accordion" ).accordion();
+
+
+/* This is all Garrett though */
+var availableTags = [
+	"Chocolate Chips",
+	"Apple Slices",
+	"Cranberries",
+	"Blueberries",
+	"Snozzberries",
+	"Walnuts",
+	"Zippers",
+	"Maple Fudge",
+	"Gummy Bears",
+	"Prozac",
+	"Tuna",
+	"Lutefisk",
+	"Goji Berries",
+	"Eye of Newt",
+	"Quail Egg",
+	"Xylitol Gum",
+	"Bees!",
+	"M&Ms",
+	"A single gold coin, completely blank apart from the initials 'R.D.' imprinted on each side. What could it mean?!"
+];
+
+/* </stuffgarrettdid> */
+
+$( "#autocomplete" ).autocomplete({
+	source: availableTags
+});
+
+
+
+$( "#button" ).button();
+$( "#radioset" ).buttonset();
+
+
+
+$( "#tabs" ).tabs();
+
+
+
+$( "#dialog" ).dialog({
+	autoOpen: false,
+	width: 400,
+	buttons: [
+		{
+			text: "Ok",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		},
+		{
+			text: "Cancel",
+			click: function() {
+				$( this ).dialog( "close" );
+			}
+		}
+	]
+});
+
+// Link to open the dialog
+$( "#dialog-link" ).click(function( event ) {
+	$( "#dialog" ).dialog( "open" );
+	event.preventDefault();
+});
+
+
+
+$( "#datepicker" ).datepicker({
+	inline: true
+});
+
+
+
+$( "#slider" ).slider({
+	range: true,
+	values: [ 17, 67 ]
+});
+
+
+
+$( "#progressbar" ).progressbar({
+	value: 20
+});
+
+
+
+$( "#spinner" ).spinner();
+
+
+
+$( "#menu" ).menu();
+
+
+
+$( "#tooltip" ).tooltip();
+
+
+
+$( "#selectmenu" ).selectmenu();
+
+
+// Hover states on the static widgets
+$( "#dialog-link, #icons li" ).hover(
+	function() {
+		$( this ).addClass( "ui-state-hover" );
+	},
+	function() {
+		$( this ).removeClass( "ui-state-hover" );
+	}
+);
+</script>
+</body>
+</html>
